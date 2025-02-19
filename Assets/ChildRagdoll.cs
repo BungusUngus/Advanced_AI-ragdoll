@@ -9,7 +9,7 @@ public class ChildRagdoll : MonoBehaviour
 
         if(self != null && self != other)
         {
-            self.Ragdoll(collision.relativeVelocity);
+            self.Ragdoll(collision.impulse);
             enabled = false;
         }
     }
